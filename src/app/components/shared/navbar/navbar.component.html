@@ -12,28 +12,16 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" href="#">Informacion</a>
+        <a class="nav-link" href="#">Heroes</a>
       </li>
       <li class="nav-item" routerLinkActive="active"x>
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-      <<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Prueba
-        <span class=""></span></a>
-
-        <ul class="dropdown-menu bg-dark">
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba1</a></li>
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
-        </ul>
+        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
-
+    <div class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Buscar" #buscarTexto (keyup.enter)="buscarHeroe(buscarTexto.value)">
+      <button (click)="buscarHeroe(buscarTexto.value)"
+       class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button>
+    </div>
   </div>
 </nav>
-
-
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
