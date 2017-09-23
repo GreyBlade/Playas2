@@ -1,40 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-      <img src="/assets/images/A-64.png" width="30" height="30" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Menu
-        <span class=""></span></a>
-
-        <ul class="dropdown-menu bg-dark">
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba1</a></li>
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
-        </ul>
-      </li>
-      <li class="nav-item active" routerLinkActive="active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" href="#">Informacion</a>
-      </li>
-      <li class="nav-item" routerLinkActive="active"x>
-        <a class="nav-link" href="#">Contacto</a>
-      </li>
-
-    </ul>
-
-  </div>
-</nav>
-
-
+<app-navbar></app-navbar>
+<div class="container header-container">
+<h1>Playa Segura</h1>
+<h2>Mapa de tu ubicacion actual</h2>
+</div>
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
+<div class="container map-container">
 <agm-map [latitude]="lat" [longitude]="lng">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
+</div>
+
+<div class="container header-container">
+  <h3>En colaboracion con</h3>
+</div>
+<div class="container img-container">
+  <div class="row">
+    <div class="col"><img src="assets/images/logo_citican.jpg" class="img-fluid pull-xs-left citican img" alt=""></div>
+    <div class="col"><img src="assets/images/sodercan.jpg" class="img-fluid pull-xs-left img" alt=""></div>
+    <div class="w-100"></div>
+    <div class="col"><img src="assets/images/gobcantabria.jpg" class="img-fluid pull-xs-left img" alt=""></div>
+    <div class="col"><img src="assets/images/uneatlantico.jpg" class="img-fluid pull-xs-left uneat img" alt="..."></div>
+  </div>
+</div>
