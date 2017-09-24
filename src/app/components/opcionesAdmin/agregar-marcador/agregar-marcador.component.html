@@ -1,0 +1,57 @@
+<p>
+  agregar-marcador works!
+</p>
+<div class="container map-container">
+<agm-map
+[latitude]="lat"
+[longitude]="lng"
+[zoom]="zoom"
+[disableDefaultUI]=false
+[zoomControl]="true "
+(mapClick)="mapClicked($event)">
+
+  <agm-marker
+    *ngFor="let item of marcadores; let i = index"
+    (markerClick)="clickedMarcador(item, i)"
+    [latitude]="item.latitud"
+    [longitude]="item.longitud"
+    [markerDraggable]="item.arrastable"
+    [iconUrl]="item.icono"
+    (dragEnd)="marcadorDragEnd(item, $event)"
+    >
+
+    <agm-info-window>
+      <strong>{{item.nombre}}</strong>
+    </agm-info-window>
+
+  </agm-marker>
+</agm-map>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <h3 class="panel-title">Agregar Marcador</h3>
+      <div class="panel-body">
+        <form (submit)="agregarMarcador()">
+          <label>Nombre de la posicion</label>
+          <input type="text" [(ngModel)]="markerName" name="nombreMarcador">
+          <br>
+          <label>Latitud</label>
+          <input type="text" [(ngModel)]="markerLat" name="latitudMarcador">
+          <br>
+          <label>Longitud</label>
+          <input type="text" [(ngModel)]="markerLng" name="longitudMarcador">
+          <br>
+          
+          <label>Arrastable</label>
+          <select [(ngModel)]="markerDraggable" name="arrastableMarcador">
+            <option value="no">No</option>
+            <option value="si">Si</option>
+          </select>
+          <input type="submit" value="Agregar">
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

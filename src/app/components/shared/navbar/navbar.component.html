@@ -13,7 +13,7 @@
         <span class=""></span></a>
 
         <ul class="dropdown-menu bg-dark">
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba1</a></li>
+          <li class="nav-item" routerLinkActive="active"><a [routerLink]="['admin-test']" class="nav-link">Prueba1Admin</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
@@ -27,7 +27,7 @@
         </ul>
       </li>
       <li class="nav-item " routerLinkActive="active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" href="#">Informacion</a>
