@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
   <a class="navbar-brand" href="#">
       <img src="" width="30" height="30" alt="">
     </a>
@@ -12,9 +12,9 @@
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Menu
         <span class=""></span></a>
 
-        <ul class="dropdown-menu bg-dark">
+        <ul class="dropdown-menu bg-light">
           <li class="nav-item" routerLinkActive="active"><a [routerLink]="['admin-test']" class="nav-link">Prueba1Admin</a></li>
-          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a [routerLink]="['login']" class="nav-link">Login</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
           <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
@@ -35,8 +35,12 @@
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" href="#">Contacto</a>
       </li>
-
     </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav mr-auto">
+        <a class="nav-link" href="#">Login</a>
+      </ul>
+    </div>
 
   </div>
 </nav>

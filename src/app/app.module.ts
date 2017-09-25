@@ -13,7 +13,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { AdminTestComponent } from './components/admin-test/admin-test.component';
 import { AgregarMarcadorComponent } from './components/opcionesAdmin/agregar-marcador/agregar-marcador.component';
-
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +22,7 @@ import { AgregarMarcadorComponent } from './components/opcionesAdmin/agregar-mar
     FooterComponent,
     AdminTestComponent,
     AgregarMarcadorComponent,
+    LoginComponent,
 
   ],
   imports: [
