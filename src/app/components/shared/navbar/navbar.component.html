@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">
+      <img src="" width="30" height="30" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Menu
+        <span class=""></span></a>
+
+        <ul class="dropdown-menu bg-light">
+          <li class="nav-item" routerLinkActive="active"><a [routerLink]="['admin-test']" class="nav-link">Prueba1Admin</a></li>
+          <li class="nav-item" routerLinkActive="active"><a [routerLink]="['login']" class="nav-link">Login</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+          <li class="nav-item" routerLinkActive="active"><a href="#" class="nav-link">Prueba2</a></li>
+
+        </ul>
+      </li>
+      <li class="nav-item " routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" href="#">Informacion</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login
+        <span class=""></span></a>
+        <ul class="dropdown-menu bg-light">
+          <form>
+                <div class="form-group dropdown-content">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Check me out
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </ul>
+      </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
