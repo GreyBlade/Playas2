@@ -10,7 +10,7 @@ import { AgmCoreModule } from '@agm/core';
 export class HomeComponent implements OnInit {
   title = 'prueba de mapa';
   //Nivel de Zoom
-  zoom:number=14;
+  zoom:number=16;
   //Posicion
   lat: number = 43.473331;
   lng: number = -3.782225;

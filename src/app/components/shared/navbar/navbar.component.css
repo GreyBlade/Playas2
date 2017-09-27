@@ -3,4 +3,9 @@
 }
 li {
     border-right: 1px solid #bbb;
+    display: block;
+}
+.menu-login{
+   right: 0;
+  left: auto;
 }
