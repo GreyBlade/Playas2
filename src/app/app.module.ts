@@ -14,6 +14,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { AdminTestComponent } from './components/admin-test/admin-test.component';
 import { AgregarMarcadorComponent } from './components/opcionesAdmin/agregar-marcador/agregar-marcador.component';
 import { LoginComponent } from './components/login/login.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { LoginComponent } from './components/login/login.component';
     AdminTestComponent,
     AgregarMarcadorComponent,
     LoginComponent,
+    PruebaComponent,
 
   ],
   imports: [

@@ -3,7 +3,9 @@
 }
 li {
     border-right: 1px solid #bbb;
+    display: block;
 }
-.dropdown-content{
-  right: 20px;
+.menu-login{
+   right: 0;
+  left: auto;
 }

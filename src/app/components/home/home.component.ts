@@ -60,7 +60,8 @@ export class HomeComponent implements OnInit {
         latitud:$event.coords.lat,
         longitud:$event.coords.lng,
         arrastable:false,
-        icono:"",
+        icono:" ",
+        // Si se quita el espacio se ponen marcadore en el mapa por cada toque
       }
       this.marcadores.push(nuevoMarcador);
     }

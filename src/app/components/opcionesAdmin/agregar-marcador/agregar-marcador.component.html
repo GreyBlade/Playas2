@@ -1,13 +1,10 @@
-<p>
-  agregar-marcador works!
-</p>
 <div class="container map-container">
 <agm-map
 [latitude]="lat"
 [longitude]="lng"
 [zoom]="zoom"
 [disableDefaultUI]=false
-[zoomControl]="true "
+[zoomControl]="false"
 (mapClick)="mapClicked($event)">
 
   <agm-marker
@@ -42,7 +39,7 @@
           <label>Longitud</label>
           <input type="text" [(ngModel)]="markerLng" name="longitudMarcador">
           <br>
-          
+
           <label>Arrastable</label>
           <select [(ngModel)]="markerDraggable" name="arrastableMarcador">
             <option value="no">No</option>
