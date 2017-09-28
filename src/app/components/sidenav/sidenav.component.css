@@ -1,0 +1,34 @@
+agm-map {
+  height: 500px;
+  width:100%;
+  margin: 10px;
+}
+.boton{
+  position: relative;
+}
+.fondo{
+  background-color: white;
+}
+.letra{
+  color:black;
+}
+.letra1{
+  float: right;
+}
+.login-btn{
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+nav ul a {
+color: #FFF;
+}
+nav,
+nav .nav-wrapper i,
+nav a.button-collapse,
+nav a.button-collapse i {
+height: 75px;
+line-height: 75px;
+}

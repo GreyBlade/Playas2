@@ -10,23 +10,6 @@ margin-bottom: 20px;
 .header-container{
   text-align: center;
 }
-
-.img-container{
-  margin: 20px;
-}
-.uneat{
-  height:300px;
-}
-
-.img{
-  position:relative;
-}
-
-.img-responsive {
-    width: auto;
-    height: 120px;
-}
-
 h1 {
 	font-family: "Architects Daughter";
 	font-size: 60px;
@@ -41,4 +24,30 @@ h3 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 15.4px;
+}
+
+.uneatlantico{
+  height: 150px;
+  width: 150px;
+
+
+}
+
+.gob{
+  width: 300px;
+
+}
+.sodercan{
+  width: 500px;
+
+}
+.citican{
+  margin-top: 50px;
+}
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40%;
+   width:100%;
 }
