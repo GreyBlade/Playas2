@@ -44,7 +44,7 @@
 
 
   </ul>
-         <li><a class="waves-effect waves-light btn-large boton" data-activates="slide-out" materialize="sideNav">PREVENT SOS</a></li>
+         <li><a class="waves-effect waves-light btn-large boton" data-activates="slide-out" materialize="sideNav" (click)="mostrarMenu()">PREVENT SOS</a></li>
        </ul>
      </div>
    </nav>
@@ -70,11 +70,9 @@
     <br>
     <li>
       <div class="input-field col s12 browser-default">
-        <select materialize="material_select">
-          <option value="">España</option>
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
+        <select materialize="material_select" [(ngModel)]="Pais" name="nombrePais" id="paisSelect">
+          <option value="" disable selected>Escoge una opcion</option>
+          <option value="1">España</option>
         </select>
         <label>País</label>
       </div>
@@ -83,11 +81,11 @@
     <br>
     <li>
       <div class="input-field col s12 browser-default">
-        <select materialize="material_select">
-          <option value="">Cantabria</option>
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
+        <select materialize="material_select" [(ngModel)]="Provincia" name="nombreProvincia" id ="provinciaSelect">
+          <option value="" disable selected>Escoge una opcion</option>
+          <option value="1">Cantabria</option>
+          <option value="2">Asturias</option>
+
         </select>
         <label>Provincia</label>
       </div>
@@ -96,11 +94,10 @@
     <br>
     <li>
       <div class="input-field col s12 browser-default">
-        <select materialize="material_select">
-          <option value="">Santander</option>
-          <option value="1">Comillas</option>
-          <option value="2"></option>
-          <option value="3"></option>
+        <select materialize="material_select" [(ngModel)]="Ciudad" name ="nombreCiudad" id="ciudadSelect">
+          <option value="" disable selected>Escoge una opcion</option>
+          <option value="1">Santander</option>
+          <option value="2">Comillas</option>
         </select>
         <label>Localidad</label>
       </div>
@@ -109,17 +106,18 @@
     <br>
     <li>
       <div class="input-field col s12 browser-default">
-        <select materialize="material_select">
-          <option value="">El Sardinero</option>
-          <option value="1">El Sardinero 2</option>
-          <option value="2">La Magdalena</option>
-          <option value="3">Comillas</option>
+        <select materialize="material_select" [(ngModel)]="Playas" name="nombrePlaya" id="playaSelect">
+          <option value="" disable selected>Escoge una opcion</option>
+          <option value="1">El Sardinero</option>
+          <option value="2">El Sardinero 2</option>
+          <option value="3">La Magdalena</option>
+          <option *ngIf="comillas==true" value="4">Comillas</option>
         </select>
         <label>Playas</label>
       </div>
     </li>
     <br>
-    <li><a class="waves-effect waves-light btn"(click)="BuscarPlaya()">Buscar</a></li>
+    <li><a class="waves-effect waves-light btn"(click)="BuscarPlaya()" [routerLink]="['prueba']">Buscar</a></li>
 
   </ul>
   </body>

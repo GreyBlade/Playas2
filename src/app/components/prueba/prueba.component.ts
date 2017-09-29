@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-prueba',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prueba.component.css']
 })
 export class PruebaComponent implements OnInit {
+  @Input('latitudBusqueda') lat:number;
+  @Input('longitudBusqueda') lng:number;
 
   constructor() { }
 

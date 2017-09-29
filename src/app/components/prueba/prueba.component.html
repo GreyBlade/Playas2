@@ -1,8 +1,17 @@
 <h1>Prueba playas</h1>
-<div class="card" style="width: 20rem;">
-  <div class="card-body">
-    <h4 class="card-title">Playa</h4>
-    <!-- <a class="nav-link" routerLink="/agregar-marcador">Agregar<span class="sr-only">(current)</span></a> -->
-    <a href="#">Agregar</a>
-  </div>
+<div class="container map-container">
+<agm-map
+[latitude]="lat"
+[longitude]="lng"
+>
+  <agm-marker
+    [latitude]="item.latitud"
+    [longitude]="item.longitud">
+
+    <agm-info-window>
+      <strong>{{item.nombre}}</strong>
+    </agm-info-window>
+
+  </agm-marker>
+</agm-map>
 </div>
