@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 declare let $:any;
 declare let jQuery:any;
 import { PruebaComponent } from '../prueba/prueba.component';
+import { AfterContentInit, Directive, EventEmitter, OnChanges, OnDestroy, SimpleChanges, Input, Output } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
+
+import { LatLng, LatLngLiteral, PolyMouseEvent, PolygonOptions } from '/home/jaime/Escritorio/Playas2/node_modules/@agm/core/services/google-maps-types';
+import { PolygonManager } from '/home/jaime/Escritorio/Playas2/node_modules/@agm/core/services/managers/polygon-manager';
 
 @Component({
   selector: 'app-sidenav',
@@ -19,7 +24,7 @@ export class SidenavComponent implements OnInit {
   //Variables para el mapa
   public latitudBusqueda:number;
   public longitudBusqueda:number;
-  playa:string;
+
 
   //Variables formulario
   Pais:string;
@@ -35,6 +40,7 @@ export class SidenavComponent implements OnInit {
 
   BuscarPlaya(){
     console.log("Prueba");
+    location.reload();
     var pais = $("#paisSelect").val();
     var provincia = $("#provinciaSelect").val();
     var ciudad = $("#ciudadSelect").val();
@@ -58,8 +64,47 @@ export class SidenavComponent implements OnInit {
       let longitudStorage = JSON.stringify(this.longitudBusqueda);
       localStorage.setItem("latitud", latitudStorage);
       localStorage.setItem("longitud", longitudStorage);
-      this.playa="El Sardinero";
+      let paths: Array<LatLngLiteral>=[
+        { lat: 43.476778, lng: -3.778782 },
+        { lat: 43.476747, lng: -3.777473 },
+        { lat: 43.474925, lng: -3.775091 },
+        { lat: 43.474427, lng: -3.775027 },
+        { lat: 43.471344, lng: -3.778460 },
+        { lat: 43.471982, lng: -3.781292 },
+        { lat: 43.473664, lng: -3.783674 },
+        { lat: 43.474267, lng: -3.783315 },
+        { lat: 43.476778, lng: -3.778782 }
+      ];
+      let pathsPrueba = JSON.stringify(paths);
+      localStorage.setItem("poligono", pathsPrueba);
 
+    }
+
+    if ((pais=="1")&&(provincia=="1")&&(ciudad=="1")&&(playas=="2")){
+      console.log("Se escogio la playa el sardinero 2");
+      this.latitudBusqueda=43.477015;
+      this.longitudBusqueda=-3.786728;
+      let latitudStorage = JSON.stringify(this.latitudBusqueda);
+      let longitudStorage = JSON.stringify(this.longitudBusqueda);
+      localStorage.setItem("latitud", latitudStorage);
+      localStorage.setItem("longitud", longitudStorage);
+      let paths: Array<LatLngLiteral>=[
+        { lat: 43.481060, lng: -3.786929 },
+        { lat: 43.481963, lng: -3.783739 },
+        { lat: 43.481901, lng: -3.782537 },
+        { lat: 43.479986, lng: -3.781142 },
+        { lat: 43.477985, lng: -3.778996 },
+        { lat: 43.476778, lng: -3.778782 },
+        { lat: 43.474267, lng: -3.783315 },
+        { lat: 43.474201, lng: -3.784490 },
+        { lat: 43.475719, lng: -3.787000 },
+        { lat: 43.478366, lng: -3.788438 },
+        { lat: 43.479503, lng: -3.788760 },
+        { lat: 43.480406, lng: -3.788137 },
+        { lat: 43.481060, lng: -3.786929 }
+      ];
+      let pathsPrueba = JSON.stringify(paths);
+      localStorage.setItem("poligono", pathsPrueba);
     }
   }
 
