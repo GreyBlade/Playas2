@@ -19,6 +19,7 @@ export class SidenavComponent implements OnInit {
   //Variables para el mapa
   public latitudBusqueda:number;
   public longitudBusqueda:number;
+  playa:string;
 
   //Variables formulario
   Pais:string;
@@ -53,6 +54,12 @@ export class SidenavComponent implements OnInit {
       console.log("se escogio la playa el sardinero");
       this.latitudBusqueda=43.473424;
       this.longitudBusqueda=-3.782104;
+      let latitudStorage = JSON.stringify(this.latitudBusqueda);
+      let longitudStorage = JSON.stringify(this.longitudBusqueda);
+      localStorage.setItem("latitud", latitudStorage);
+      localStorage.setItem("longitud", longitudStorage);
+      this.playa="El Sardinero";
+
     }
   }
 

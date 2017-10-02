@@ -7,12 +7,14 @@ import { AgmCoreModule } from '@agm/core';
   styleUrls: ['./prueba.component.css']
 })
 export class PruebaComponent implements OnInit {
-  @Input('latitudBusqueda') lat:number;
-  @Input('longitudBusqueda') lng:number;
-
+  a = JSON.parse(localStorage.getItem("latitud"));
+  b = JSON.parse(localStorage.getItem("longitud"));
+  zoom=15;
   constructor() { }
 
   ngOnInit() {
+    console.log(this.a);
+    console.log(this.b)
   }
 
 }

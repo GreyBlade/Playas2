@@ -1,15 +1,17 @@
-<h1>Prueba playas</h1>
+<h1>Playa Buscada</h1>
 <div class="container map-container">
 <agm-map
-[latitude]="lat"
-[longitude]="lng"
+[latitude]="a"
+[longitude]="b"
+[zoom]="zoom"
+
 >
   <agm-marker
-    [latitude]="item.latitud"
-    [longitude]="item.longitud">
+    [latitude]="latitudBusqueda"
+    [longitude]="longitudBusqueda">
 
     <agm-info-window>
-      <strong>{{item.nombre}}</strong>
+      <strong>Prueba</strong>
     </agm-info-window>
 
   </agm-marker>

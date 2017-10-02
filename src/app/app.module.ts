@@ -17,6 +17,7 @@ import { AgregarMarcadorComponent } from './components/opcionesAdmin/agregar-mar
 import { LoginComponent } from './components/login/login.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { PoligonoComponent } from './components/poligono/poligono.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     LoginComponent,
     PruebaComponent,
     SidenavComponent,
+    PoligonoComponent,
 
   ],
   imports: [
