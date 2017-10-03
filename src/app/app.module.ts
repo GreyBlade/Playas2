@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PruebaComponent } from './components/prueba/prueba.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PoligonoComponent } from './components/poligono/poligono.component';
+import { RegisterComponent } from './components/register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { PoligonoComponent } from './components/poligono/poligono.component';
     PruebaComponent,
     SidenavComponent,
     PoligonoComponent,
+    RegisterComponent,
 
   ],
   imports: [

@@ -12,11 +12,12 @@ agm-map {
 .letra{
   color:black;
 }
+
 .letra1{
   float: right;
 }
 .dropdown-content{
-    width: 100%;
+    width: 30%;
     margin: 20px;
 }
 
@@ -29,4 +30,7 @@ nav a.button-collapse,
 nav a.button-collapse i {
 height: 75px;
 line-height: 75px;
+}
+.texto{
+  color: black;
 }

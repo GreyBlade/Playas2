@@ -7,6 +7,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 import { LatLng, LatLngLiteral, PolyMouseEvent, PolygonOptions } from '../../../../node_modules/@agm/core/services/google-maps-types';
 import { PolygonManager } from '../../../../node_modules/@agm/core/services/managers/polygon-manager';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -25,13 +26,16 @@ export class SidenavComponent implements OnInit {
   public latitudBusqueda:number;
   public longitudBusqueda:number;
 
+//Variables formulario login
+Usuario:string;
+Contra:string;
 
   //Variables formulario
   Pais:string;
   Provincia:string;
   Ciudad:string;
   Playas:string;
-  constructor() { }
+  constructor(private router:Router) { }
 
 
   ngOnInit() {
@@ -77,6 +81,8 @@ export class SidenavComponent implements OnInit {
       ];
       let pathsPrueba = JSON.stringify(paths);
       localStorage.setItem("poligono", pathsPrueba);
+      this.router.navigate(['./prueba']);
+
 
     }
 
@@ -105,6 +111,7 @@ export class SidenavComponent implements OnInit {
       ];
       let pathsPrueba = JSON.stringify(paths);
       localStorage.setItem("poligono", pathsPrueba);
+      this.router.navigate(['./prueba']);
     }
   }
 
@@ -114,11 +121,29 @@ export class SidenavComponent implements OnInit {
 
   }
 
-/*  noCerar(){
+  noCerar(){
   $('.dropdown-button + .dropdown-content').on('click', function(event) {
   event.stopPropagation();
 });
 }
-*/
+
+iniciarSesion(){
+
+  console.log("iniciando sesion");
+  location.reload();
+  if ((this.Usuario=="administrador")&&(this.Contra=="administrador123")){
+    console.log("administrador logeado");
+    this.router.navigate(['./admin-test']);
+  }
+  else if ((this.Usuario=="coordinador")&&(this.Contra=="coordinador123")){
+    console.log("coordinador logeado");
+    this.router.navigate(['./coordinador']);
+  }
+  else if ((this.Usuario=="socorrista")&&(this.Contra=="socorrista123")){
+    console.log("socorrista logeado");
+    this.router.navigate(['./socorrista']);
+  }
+}
+
 
 }
