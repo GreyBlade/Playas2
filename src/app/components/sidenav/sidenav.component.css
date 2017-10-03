@@ -15,11 +15,9 @@ agm-map {
 .letra1{
   float: right;
 }
-.login-btn{
-  margin-top: 25px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  width: 200px;
+.dropdown-content{
+    width: 100%;
+    margin: 20px;
 }
 
 nav ul a {

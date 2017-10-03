@@ -9,15 +9,15 @@
   <body>
     <nav class="#039be5 light-blue darken-1">
      <div class="nav-wrapper">
-       <a href="#!" class="brand-logo boton">Playas</a>
+       <a class="brand-logo boton" [routerLink]="['home']">Playas</a>
        <ul class="right">
-         <a class='dropdown-button btn boton' data-beloworigin="true" constrainWidth="false"  data-activates='dropdown1' (click)="noCerar()"> Iniciar Sesion </a>
+         <a class='dropdown-button btn' data-activates='dropdown1' (click)="noCerar()" data-constrainwidth="false"> Iniciar Sesion </a>
 
   <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content dropdown-big'>
+  <ul id='dropdown1' class='dropdown-content'>
 <!-- Formulario-->
-        <li class="login">
-          <div class="">
+      <li class="login">
+
            <div class="card-content white-text">
              <span class="card-title">Inicio Sesión gestores</span>
               <ul>
@@ -37,13 +37,8 @@
            <div class="card-action">
              <a class="letra letra1" href="#">Registrarme</a>
              <a class="waves-effect waves-light btn-large login-btn">Login</a>
-
            </div>
-         </div>
-
          </li>
-
-
   </ul>
          <li><a class="waves-effect waves-light btn-large boton" data-activates="slide-out" materialize="sideNav" (click)="mostrarMenu()">PREVENT SOS</a></li>
        </ul>

@@ -114,10 +114,11 @@ export class SidenavComponent implements OnInit {
 
   }
 
-  noCerar(){
+/*  noCerar(){
   $('.dropdown-button + .dropdown-content').on('click', function(event) {
   event.stopPropagation();
 });
 }
+*/
 
 }
