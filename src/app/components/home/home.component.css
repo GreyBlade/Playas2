@@ -1,5 +1,5 @@
 agm-map{
-  height: 500px;
+  height: 700px;
   width:100%;
 
 }
@@ -11,19 +11,15 @@ margin-bottom: 20px;
   text-align: center;
 }
 h1 {
-	font-family: "Architects Daughter";
+	font-family: "Comic-Sans";
 	font-size: 60px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 }
-h3 {
-	font-family: "Architects Daughter";
-	font-size: 26px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15.4px;
+h2 {
+	font-family: "Comic-Sans";
+  color:white;
 }
 
 .uneatlantico{

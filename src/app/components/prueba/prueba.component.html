@@ -1,12 +1,14 @@
 <h1>Playa Buscada</h1>
-<div class="container map-container">
+<div class="jumbotron">
 <agm-map
 [latitude]="a"
 [longitude]="b"
 [zoom]="zoom"
 >
 <agm-polygon
- [paths]="paths">
+ [paths]="paths"
+ (polyClick)="polyClicked($event)"
+ >
 </agm-polygon>
   <agm-marker
     [latitude]="latitudBusqueda"

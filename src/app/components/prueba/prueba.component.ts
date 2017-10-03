@@ -18,4 +18,8 @@ export class PruebaComponent implements OnInit {
     console.log(this.b)
   }
 
+  polyClicked($event:any){
+    console.log("Test poligono clickeado");
+  }
+
 }
