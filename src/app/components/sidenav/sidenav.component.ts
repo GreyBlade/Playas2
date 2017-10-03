@@ -5,8 +5,8 @@ import { PruebaComponent } from '../prueba/prueba.component';
 import { AfterContentInit, Directive, EventEmitter, OnChanges, OnDestroy, SimpleChanges, Input, Output } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 
-import { LatLng, LatLngLiteral, PolyMouseEvent, PolygonOptions } from '/home/jaime/Escritorio/Playas2/node_modules/@agm/core/services/google-maps-types';
-import { PolygonManager } from '/home/jaime/Escritorio/Playas2/node_modules/@agm/core/services/managers/polygon-manager';
+import { LatLng, LatLngLiteral, PolyMouseEvent, PolygonOptions } from '../../../../node_modules/@agm/core/services/google-maps-types';
+import { PolygonManager } from '../../../../node_modules/@agm/core/services/managers/polygon-manager';
 
 @Component({
   selector: 'app-sidenav',
