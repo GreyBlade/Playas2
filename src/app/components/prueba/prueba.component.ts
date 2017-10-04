@@ -13,10 +13,7 @@ export class PruebaComponent implements OnInit {
   paths = JSON.parse(localStorage.getItem("poligono"));
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.a);
-    console.log(this.b)
-  }
+  ngOnInit() {}
 
   polyClicked($event:any){
     console.log("Test poligono clickeado");

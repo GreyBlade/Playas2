@@ -1,49 +1,17 @@
-agm-map{
-  height: 700px;
-  width:100%;
 
-}
-.map-container{
-margin-top:  20px;
-margin-bottom: 20px;
-}
 .header-container{
   text-align: center;
 }
-h1 {
-	font-family: "Comic-Sans";
-	font-size: 60px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-}
-h2 {
-	font-family: "Comic-Sans";
+p{
+  text-align: center;
   color:white;
 }
-
-.uneatlantico{
-  height: 150px;
-  width: 150px;
-
-
+/*.col{
+  border-style: dotted;
+}*/
+h5{
+  color: white;
 }
-
-.gob{
-  width: 300px;
-
-}
-.sodercan{
-  width: 500px;
-
-}
-.citican{
-  margin-top: 50px;
-}
-footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:40%;
-   width:100%;
+marquee{
+  color:white;
 }

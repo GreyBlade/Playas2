@@ -38,21 +38,15 @@ Contra:string;
   constructor(private router:Router) { }
 
 
-  ngOnInit() {
-    console.log(this.latitudBusqueda);
-  }
+  ngOnInit() {}
 
   BuscarPlaya(){
-    console.log("Prueba");
+
     location.reload();
     var pais = $("#paisSelect").val();
     var provincia = $("#provinciaSelect").val();
     var ciudad = $("#ciudadSelect").val();
     var playas= $("#playaSelect").val();
-    console.log(pais);
-    console.log(provincia);
-    console.log(ciudad);
-    console.log(playas);
 
     if ((ciudad=="2")){
       this.comillas=true;
@@ -61,7 +55,7 @@ Contra:string;
     }
 
     if ((pais=="1") && (provincia=="1")&&(ciudad=="1")&&(playas=="1")){
-      console.log("se escogio la playa el sardinero");
+
       this.latitudBusqueda=43.473424;
       this.longitudBusqueda=-3.782104;
       let latitudStorage = JSON.stringify(this.latitudBusqueda);
@@ -87,7 +81,7 @@ Contra:string;
     }
 
     if ((pais=="1")&&(provincia=="1")&&(ciudad=="1")&&(playas=="2")){
-      console.log("Se escogio la playa el sardinero 2");
+
       this.latitudBusqueda=43.477015;
       this.longitudBusqueda=-3.786728;
       let latitudStorage = JSON.stringify(this.latitudBusqueda);
@@ -116,10 +110,7 @@ Contra:string;
   }
 
 
-  mostrarMenu(){
-    console.log("asd");
-
-  }
+  mostrarMenu(){}
 
   noCerar(){
   $('.dropdown-button + .dropdown-content').on('click', function(event) {
@@ -128,8 +119,6 @@ Contra:string;
 }
 
 iniciarSesion(){
-
-  console.log("iniciando sesion");
   location.reload();
   if ((this.Usuario=="administrador")&&(this.Contra=="administrador123")){
     console.log("administrador logeado");
