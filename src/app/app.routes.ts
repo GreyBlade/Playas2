@@ -7,6 +7,7 @@ import { PruebaComponent } from '../app/components/prueba/prueba.component';
 import { SidenavComponent } from '../app/components/sidenav/sidenav.component';
 import { PoligonoComponent } from '../app/components/poligono/poligono.component';
 import { RegisterComponent } from '../app/components/register/register.component';
+import { NavbarComponent } from '../app/components/shared/navbar/navbar.component'
 
 const app_routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -15,8 +16,9 @@ const app_routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'prueba', component: PruebaComponent},
   {path: 'sidenav', component: SidenavComponent},
-  {path: 'poligono', component: PoligonoComponent},
+  {path: 'poligono', component: PoligonoComponent}, 
   {path: 'register', component: RegisterComponent},
+  {path: 'navbar', component: NavbarComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

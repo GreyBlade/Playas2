@@ -1,8 +1,21 @@
-agm-map {
-  height: 500px;
-  width:100%;
-  margin: 10px;
+body{
+  top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+
 }
+.btn-menu{
+  border: 1px solid;
+  color: black;
+}
+.navtest{
+  opacity: 0.4;
+}
+.homebutton{
+  float: left;
+}
+
 .boton{
   position: relative;
 }

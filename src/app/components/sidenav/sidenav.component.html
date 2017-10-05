@@ -7,11 +7,11 @@
     <title></title>
   </head>
   <body>
-    <nav class="#039be5 light-blue darken-1">
+    <nav class="N/A transparent">
      <div class="nav-wrapper">
-       <a class="brand-logo boton" [routerLink]="['home']">Playas</a>
+       <a class="brand-logo boton homebutton" [routerLink]="['home']">Inicio</a>
        <ul class="right">
-         <a class='dropdown-button btn' data-activates='dropdown1' (click)="noCerar()" data-constrainwidth="false"> Iniciar Sesion </a>
+         <a class='N/A transparent btn btn-menu' data-activates='dropdown1' (click)="noCerar()" data-constrainwidth="false" routerLink="/login"> Iniciar Sesion </a>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content'>
@@ -46,7 +46,7 @@
            </div>
          </li>
   </ul>
-         <li><a class="waves-effect waves-light btn-large boton" data-activates="slide-out" materialize="sideNav" (click)="mostrarMenu()">PREVENT SOS</a></li>
+         <li><a class="button special" data-activates="slide-out" materialize="sideNav" (click)="mostrarMenu()">Menu</a></li>
        </ul>
      </div>
    </nav>
