@@ -19,6 +19,7 @@ import { PruebaComponent } from './components/prueba/prueba.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PoligonoComponent } from './components/poligono/poligono.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { RegisterComponent } from './components/register/register.component';
     SidenavComponent,
     PoligonoComponent,
     RegisterComponent,
+    CarruselComponent,
 
   ],
   imports: [

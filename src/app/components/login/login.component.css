@@ -1,0 +1,24 @@
+.login-container{
+
+  position: absolute;
+  left: 50%;
+  top: 35%;
+
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /*
+  Yep!
+  */
+  transform: translate(-50%, -50%);
+
+  /*
+  Not even necessary really.
+  e.g. Height could be left out!
+  */
+  width: 40%;
+  height: 40%;
+}

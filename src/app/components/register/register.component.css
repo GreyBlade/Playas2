@@ -1,4 +1,7 @@
 .form-container{
   margin-top: 20px;
-  background-color: rgba(226, 186, 186,0.4);
+  background-color:rgba(228, 215, 215,0.4)
+}
+h5{
+  text-align: center;
 }

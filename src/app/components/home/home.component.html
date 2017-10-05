@@ -1,76 +1,213 @@
-<div class="container header-container">
-<h1>Playa Segura</h1>
-</div>
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
 
-<div class="row">
-    <div class="col s12"><p>s12</p></div>
-    <div class="col s12 m4 l2"><p>s12 m4</p></div>
-    <div class="col s12 m4 l8">
-      <div class="row">
-        <div class="row">
-      <div class="col s6">
-        <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/images/logo.png">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-      </div>
-      <div class="col s6">6-columns (one-half)</div>
-    </div>
-      </div>
-    </div>
-    <div class="col s12 m4 l2">
-      <div class="box">
-        <u>Noticias</u>
-      <br>
-        <marquee direction="up">
-          <h5>*Compra por el ayuntamineto</h5>
-          <p>03/10/2017</p>
-        El ayuntamineto compro nuevos equipos para los socorristas de playas
-        <br>
-        <br>
-          <h5>*Algas en playas</h5>
-          <p>07/09/2017</p>
-          Se han encontrado una gran cantidad de algas marinas cerca de las costas
-           de las playas en santander
-          <br>
-          <br>
-            *Otra noticia aca
-            <br>
-              *Otra noticia aca
-              <br>
-                *Otra noticia aca
-                <br>
-                  *Otra noticia aca
-                  <br>
-                    *Otra noticia aca
-                    <br>
-                      *Otra noticia aca
-                      <br>
-                        *Otra noticia aca
+<!DOCTYPE HTML>
+<html>
 
-        </marquee>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12 m6 l3"><p>Imagen1</p></div>
-    <div class="col s12 m6 l3"><p>Imagen2</p></div>
-    <div class="col s12 m6 l3"><p>Imagen3</p></div>
-    <div class="col s12 m6 l3"><p>Imagen4</p></div>
-  </div>
+<head>
+	<title>Playa Segura</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="landing">
+	<div id="page-wrapper">
+
+		<header id="header" class="alt">
+			<nav id="nav">
+				<ul>
+					<li><a routerLink="/home">Inicio</a></li>
+					<!--
+							<li>
+								<a href="#" class="icon fa-angle-down">Layouts</a>
+								<ul>
+									<li><a href="generic.html">Generic</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Option One</a></li>
+											<li><a href="#">Option Two</a></li>
+											<li><a href="#">Option Three</a></li>
+											<li><a href="#">Option Four</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li> -->
+					<li><a routerLink="/login">Iniciar Sesion</a></li>
+					<li><a routerLink="/register" class="button">Registrarse</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<h2>Playa Segura</h2>
+			<ul class="actions">
+				<li><a href="#" class="button special">Buscar Playa</a></li>
+			</ul>
+		</section>
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+
+			<!--section class="box special">
+						<header class="major">
+							<h3>Las playas son una parte importante para la recreasion en España</h3>
+							<p>
+							<br />
+							Nuestra misión es informar y ayudar a salvar vidas.</p>
+							<br />
+						</header>
+						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+
+					</section-->
+
+					<section class="box special features">
+					  <div class="features-row">
+					    <section>
+								<h3>Noticias</h3>
+					      <marquee direction="up" scrolldelay="800">
+									<img src="" class = "materialboxed" width="60%">
+					        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Alias, impedit, minus. In amet cupiditate maxime illo, rerum!
+										Velit vero voluptas sequi, mollitia unde dicta inventore quo libero
+										iste expedita reiciendis.</p>
+					      </marquee>
+					    </section>
+					    <section>
+								<h3>Anuncios</h3>
+					      <marquee direction="up" scrolldelay="5">
+					        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Alias, impedit, minus. In amet cupiditate maxime illo, rerum!
+										Velit vero voluptas sequi, mollitia unde dicta inventore quo libero
+										iste expedita reiciendis.</p>
+					      </marquee>
+					    </section>
+					  </div>
+					</section>
+
+			<section class="box special features">
+				<div class="features-row">
+					<section>
+						<span class="image featured"><img src="assets/images/arnia.png" alt="" /></span>
+						<h3>Playa de la Arnía</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions">
+							<li><a href="areas.html" class="button alt">Ver Playa</a></li>
+						</ul>
+					</section>
+					<section>
+						<span class="image featured"><img src="assets/images/De_los_Peligros.png" alt="" /></span>
+						<h3>Playa de los Peligros</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Ver Playa</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="features-row">
+					<section>
+						<span class="image featured"><img src="assets/images/Playa_De_Matalenas.png" alt="" /></span>
+						<h3>Playa de la Mataleñas</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Ver Playa</a></li>
+						</ul>
+					</section>
+					<section>
+						<span class="image featured"><img src="assets/images/sardinero.png" alt="" /></span>
+						<h3>Playa del Sardinero</h3>
+						<p>Playa situada en el núcleo urbano de Santander,unida en la bajamar con la Segunda y La Concha, siendo la parte más al norte del extenso arenal situado entre cabo Menor y la Península de la Magdalena. Casi 2 kilómetros de fina arena. Durante mucho tiempo, caladero de sardinas, de ahí proviene el nombre de El Sardinero.</p>
+						<ul class="actions">
+							<li><a routerLink="/prueba" class="button alt">Ver Playa</a></li>
+						</ul>
+					</section>
+				</div>
+			</section>
+
+			<div class="row">
+				<div class="6u 12u(narrower)">
+
+					<section class="box special">
+						<span class="image featured"><img src="assets/images/pic02.jpg" alt="" /></span>
+						<h3>Playas Santander</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Ver otras</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<div class="6u 12u(narrower)">
+
+					<section class="box special">
+						<span class="image featured"><img src="assets/images/pic03.jpg" alt="" /></span>
+						<h3>Equipos de seguridad</h3>
+						<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+						<ul class="actions">
+							<li><a href="#" class="button alt">Comprar</a></li>
+						</ul>
+					</section>
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- CTA
+				<section id="cta">
+
+					<h2>Sign up for beta access</h2>
+					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
+
+					<form>
+						<div class="row uniform 50%">
+							<div class="8u 12u(mobilep)">
+								<input type="email" name="email" id="email" placeholder="Email Address" />
+							</div>
+							<div class="4u 12u(mobilep)">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			Linea horizontal donde se podria poner una form
+			-->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Uneatlantico. All rights reserved.</li>
+
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollgress.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
