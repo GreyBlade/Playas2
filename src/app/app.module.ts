@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MaterializeModule} from 'angular2-materialize';
+import {HttpModule} from '@angular/http';
 
 //rutas
 import {app_routing} from './app.routes';
@@ -20,6 +21,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PoligonoComponent } from './components/poligono/poligono.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { PlayasComponent } from './components/playas/playas.component';
+import { AgregarPlayaComponent } from './components/opcionesAdmin/agregar-playa/agregar-playa.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,8 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     PoligonoComponent,
     RegisterComponent,
     CarruselComponent,
-
+    PlayasComponent,
+    AgregarPlayaComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     app_routing,
     FormsModule,
     MaterializeModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
