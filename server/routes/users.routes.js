@@ -1,9 +1,7 @@
 'use strict'
 const express = require('express');
-const UserController = require('../controllers/users.controllers');
+const UserController = require('../controllers/users.controller');
 const api = express.Router();
 
-api.get('/', function(){
-  console.log("Users request");
-});
+api.get('/', UserController.pruebas);
 module.exports = api;
