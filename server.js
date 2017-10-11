@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 //ruta en donde pondremos nuestra api para acceder a la bd
 const api = require('./server/routes/api');
+const users = require('./server/routes/users.routes');
+
 const port = 3000;
 
 const app = express();
@@ -16,8 +18,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use('/api' , api);
 app.get('*', (req, res)=>{
-  res.sendFile(path.join(_dirname, 'dist/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 app.listen(port, function(){
   console.log("Server running on localhost " + port);
 });
+app.use('/api/users', users);

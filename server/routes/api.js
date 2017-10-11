@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const db = "mongodb://jaimec14:narutovssasuke@ds113455.mlab.com:13455/playasdb";
+const db = "mongodb://jaimec14:123456@ds113455.mlab.com:13455/playasdb";
 const Playa = require("../models/playas");
 mongoose.Promise = global.Promise;
 mongoose.connect(db, function(err){
@@ -10,7 +10,7 @@ mongoose.connect(db, function(err){
   }
 });
 
-router.get('/playas', function(req, res){
+router.get('/playas', function(req,  res){
   console.log("Peticion de las playas");
   Playa.find({})
     .exec(function(err, playas){
@@ -42,7 +42,7 @@ router.post('/playa', function(req, res){
   nuevaPlaya.descripcion = req.body.descripcion;
   nuevaPlaya.save(function(err, playaInsertado){
     if (err){
-      console.log("Error ingresando a la base de datos");
+      console.log("Error ingresando   a la base de datos");
     }else{
       res.json(playaInsertado);
     }

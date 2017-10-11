@@ -6,8 +6,8 @@ import { Playas } from '../playas'
 @Injectable()
 export class PlayaServiceService {
 
-  private getUrl = "api/playas";
-  private postUrl = "api/playa";
+  private getUrl = "/api/playas";
+  private postUrl = "/api/playa";
   constructor(private http:Http) { }
 
   getPlayas(){
@@ -16,9 +16,9 @@ export class PlayaServiceService {
   }
 
   agregarPlaya(playa:Playas){
-    let headers = new Headers({'Content-Type':'aplication/json'});
-    let opciones = new RequestOptions({headers:headers});
-    return this.http.post(this.postUrl, JSON.stringify(playa), opciones)
-    .map((response: Response)=> response.json());
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+    return this.http.post(this.postUrl, JSON.stringify(playa), options)
+      .map((response: Response) => response.json());
   }
 }

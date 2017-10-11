@@ -1,23 +1,15 @@
-<div class="row">
-    <form class="col s12" #form="ngForm" (ng-submit)="SubmitAgregarVideo(form.value)">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">Nombre</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="text" class="validate">
-          <label for="password">Tipo</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="text" class="validate">
-          <label for="email">Descripcion</label>
-        </div>
-      </div>
-      <button class="waves-effect waves-light btn" type="submit">Agregar Playa</button>
-    </form>
-  </div>
+<form #form="ngForm" (ngSubmit)="agregarPlaya(form.value)" class="well">
+				<div class="form-group">
+					<label>Nombre</label>
+					<input type="text" class="form-control" required name="nombre" ngModel>
+				</div>
+				<div class="form-group">
+					<label>Tipo</label>
+					<input type="text" class="form-control" required name="tipo" ngModel>
+				</div>
+				<div class="form-group">
+					<label>Descripcion</label>
+					<input type="text" class="form-control" name="descripcion" ngModel>
+				</div>
+				<button type="submit" class="btn btn-success">Save</button>
+			</form>

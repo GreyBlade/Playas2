@@ -19,7 +19,7 @@ export class AgregarPlayaComponent implements OnInit {
     .subscribe(respuestaVideos => this.playas = respuestaVideos);
   }
 
-  SubmitAgregarVideo(playa:Playas){
+  agregarPlaya(playa:Playas){
     this._playasService.agregarPlaya(playa)
     .subscribe(resNuevaPlaya =>{
       this.playas.push(resNuevaPlaya);

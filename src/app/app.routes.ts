@@ -12,7 +12,7 @@ import { PlayasComponent } from '../app/components/playas/playas.component';
 import { AgregarPlayaComponent } from '../app/components/opcionesAdmin/agregar-playa/agregar-playa.component';
 
 const app_routes: Routes = [
-  { path: 'home', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path : 'admin-test', component: AdminTestComponent},
   {path: 'agregar-marcador', component: AgregarMarcadorComponent},
   {path: 'login', component: LoginComponent},
