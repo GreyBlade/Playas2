@@ -16,9 +16,10 @@ const app_routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'prueba', component: PruebaComponent},
   {path: 'sidenav', component: SidenavComponent},
-  {path: 'poligono', component: PoligonoComponent}, 
+  {path: 'poligono', component: PoligonoComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'navbar', component: NavbarComponent},
+  {path: 'register', component: RegisterComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
