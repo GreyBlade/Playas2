@@ -1,7 +1,14 @@
+/*CSS para footer(Logos de Colaboración)*/
+.logos { display: inline-block; margin: 0 auto;}
+.alineacion{display: block; margin: 0 auto;}
+/*--------------------------------------------------*/
 
 p{
   text-align: center;
   color:black;
+}
+.button-special{
+  width: 50%;
 }
 /*.col{
   border-style: dotted;

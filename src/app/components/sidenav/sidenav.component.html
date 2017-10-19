@@ -3,21 +3,76 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <title></title>
+    <!--Permite que el navegador reconozca que el sitio esta optimisado para mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
+    <nav>
+<div class="nav-wrapper nav-color">
+  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  <a href="#" class="brand-logo right">Proyecto Playas</a>
+  <ul class="left hide-on-med-and-down">
+    <li><a routerLink="/" class="texto_menu">Menu</a></li>
+    <li><a routerLink="/login" class="texto_menu">Iniciar sesión</a></li>
+    <li><a routerLink="/register" class="texto_menu">Crear cuenta</a></li>
+  </ul>
+  <ul class="side-nav" id="mobile-demo">
+        <li><a>Menu</a></li>
+        <li><a routerLink="/login" class="texto_menu">Iniciar sesión</a></li>
+        <li><a routerLink="/register" class="texto_menu">Crear cuenta</a></li>
+      </ul>
+</div>
+</nav>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+$( document ).ready(function(){
+    $(".button-collapse").sideNav();
+});</script>
+
+
+
+
+    <!--
     <nav class="N/A transparent">
      <div class="nav-wrapper">
        <a class="brand-logo boton homebutton" [routerLink]="['home']">Inicio</a>
        <ul class="right">
-         <a class='N/A transparent btn btn-menu' data-activates='dropdown1' (click)="noCerar()" data-constrainwidth="false" routerLink="/login"> Iniciar Sesion </a>
+         <a class='N/A transparent btn btn-menu' data-activates='dropdown1' (click)="noCerar()" data-constrainwidth="false" routerLink="/login"> Iniciar Sesion </a>-->
+       </body>
+     </html>
 
-  <!-- Dropdown Structure -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Menu Desplegable
   <ul id='dropdown1' class='dropdown-content'>
-<!-- Formulario-->
       <li class="login">
-
            <div class="card-content white-text">
              <span class="card-title texto">Inicio Sesión gestores</span>
               <ul>
@@ -121,6 +176,4 @@
     <br>
     <li><a class="waves-effect waves-light btn" (click)="BuscarPlaya()">Buscar</a></li>
 
-  </ul>
-  </body>
-</html>
+  </ul>-->

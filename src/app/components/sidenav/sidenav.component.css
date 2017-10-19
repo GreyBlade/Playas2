@@ -1,3 +1,9 @@
+.nav-color{
+  background-color: #006064 ;
+}
+
+
+
 body{
   top: 0;
     z-index: 100;
@@ -46,4 +52,11 @@ line-height: 75px;
 }
 .texto{
   color: black;
+}
+nav{
+  width: 100%;
+}
+
+.texto_menu{
+  font-size: 18px;
 }
